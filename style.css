@@ -1,0 +1,321 @@
+body {
+    width: 1440px;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+}
+
+main{
+    position: relative;
+    justify-content: space-between;
+    padding: 145px 220px;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    align-self: center;
+}
+.box{
+    background-color: white;
+    width: 52%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 50px;
+}
+.violet{
+    background-image: linear-gradient(180deg, hsl(293, 100%, 63%)-50%,hsl(264, 100%, 61%)100%); 
+    width: 36%;
+    height: 90%;
+    position: absolute;
+    z-index: -1;
+    top: -2%;
+    right: 71%;
+    border-radius: 0px 0px 500px 520px;
+}
+.pale-violet{
+    background-color:hsl(264, 100%, 61%,0.05); 
+    width: 22%;
+    height: 87%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 78%;
+    border-radius: 250px 0px 0px 0px;
+}
+
+.app {
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 25px;
+}
+
+.mobile-chat {
+    margin-left:140px;
+    width: 22%;
+    background-color: white;
+    padding: 11px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 0.2);
+    border-radius: 30px;
+    position: relative;
+    z-index: -1;
+    
+    /* box-shadow: 0 0 50px #ccc; */
+}
+
+.chat-top {
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 8px 0px;
+    border-radius: 20px 20px 8px 8px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    padding: 1px;
+}
+
+.name {
+    padding: 10px;
+}
+
+.avatar-head {
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    margin: 0;
+}
+
+.avatar-text {
+    font-size: 9px;
+    color: hsl(276, 100%, 81%);
+    font-weight: 400;
+    margin: 3px 0px;
+}
+
+.dot {
+    height: 14px;
+}
+
+.chat {
+    font-size: 8px;
+    font-weight: 400;
+}
+.space-end{
+    width: 110px;
+}
+
+.chat.left {
+    color: hsl(276, 55%, 52%);
+    background-color: hsla(276, 55%, 52%, 0.1);
+    float: left;
+    width: 50%;
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin: 0px 10px 10px;
+    box-shadow: 2px 2px hsla(276, 55%, 52%, 0.1);
+}
+
+.chat.right {
+    color: hsl(271, 15%, 43%);
+    background-color: white;
+    float: right;
+    width: 50%;
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin: 0px 10px 10px;
+    box-shadow: 5px 5px 5px hsla(276, 55%, 52%, 0.1);
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.dog-img {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    align-self: flex-end;
+    margin: 8px 10px 10px;
+}
+
+.dog {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+
+}
+
+.form {
+    color: hsl(271, 15%, 43%);
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 12px 12px 12px 5px;
+    box-shadow: 5px 5px 5px hsla(276, 55%, 52%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    width: 61%;
+    padding: 8px 10px;
+    margin: 0px 10px 10px;
+}
+
+
+.container {
+    position: relative;
+    padding-left: 20px;
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(276, 100%, 81%);
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    display: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid hsl(289, 100%, 72%);
+}
+
+.dollar {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin-right: 8px;
+
+}
+
+input[type="text" i] {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    width: 85%;
+}
+
+::placeholder {
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(270, 7%, 64%, 0.5);
+}
+
+.text_input {
+    position: relative;
+}
+
+.send-button {
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50px;
+    padding: 2px;
+    right: 14px;
+    bottom: 14px;
+}
+
+/* booking */
+.booking{
+    width: 51%;
+}
+.head-text {
+    font-size: 41px;
+    color: hsl(271, 36%, 24%);
+    font-weight: 500;
+    text-align: left;
+    margin: 24px;
+}
+
+.para {
+    font-size: 16px;
+    color: hsl(270, 7%, 64%);
+    font-weight: 400;
+    text-align: left;
+    padding:0px 30px;
+    line-height: 30px;
+}
+/* mobile view */
+ @media screen and (max-width: 480px) {
+    body{
+        width: 375px;
+    }
+    main{
+    position: relative;
+    padding: 0px;
+    padding-top: 20px;
+    flex-direction: column;
+
+}
+.hide{
+    display: none;
+}
+.flex {
+    display: flex;
+}
+
+.center {
+    align-self: center;
+}
+.box{
+    width: 49%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 50px;
+}
+.violet{
+    background-image: linear-gradient(180deg, hsl(293, 100%, 63%)-5%,hsl(264, 100%, 61%)25%); 
+    width: 100%;
+    height: 58%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 50%;
+    border-radius: 0px 0px 250px 10px;
+}
+
+
+.app {
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 25px;
+}
+
+.mobile-chat {
+    margin: 50px;
+    width: unset;
+ } 
+ .chat{
+    font-size: 9px;
+ }
+/* booking */
+.booking{
+    margin: -10px 0px 50px;
+    width: unset;
+}
+.head-text {
+    text-align: center;
+}
+
+.para {
+    text-align: center;
+}
+}  
