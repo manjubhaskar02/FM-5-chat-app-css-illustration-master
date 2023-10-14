@@ -4,7 +4,7 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-main{
+main {
     position: relative;
     justify-content: space-between;
     padding: 145px 220px;
@@ -17,7 +17,8 @@ main{
 .center {
     align-self: center;
 }
-.box{
+
+.box {
     background-color: white;
     width: 52%;
     height: 30px;
@@ -27,8 +28,9 @@ main{
     transform: translate(-50%, 0%);
     border-radius: 50px;
 }
-.violet{
-    background-image: linear-gradient(180deg, hsl(293, 100%, 63%)-50%,hsl(264, 100%, 61%)100%); 
+
+.violet {
+    background-image: linear-gradient(180deg, hsl(293, 100%, 63%)-50%, hsl(264, 100%, 61%)100%);
     width: 36%;
     height: 90%;
     position: absolute;
@@ -37,8 +39,9 @@ main{
     right: 71%;
     border-radius: 0px 0px 500px 520px;
 }
-.pale-violet{
-    background-color:hsl(264, 100%, 61%,0.05); 
+
+.pale-violet {
+    background-color: hsl(264, 100%, 61%, 0.05);
     width: 22%;
     height: 87%;
     position: absolute;
@@ -54,7 +57,7 @@ main{
 }
 
 .mobile-chat {
-    margin-left:140px;
+    margin-left: 140px;
     width: 22%;
     background-color: white;
     padding: 11px;
@@ -62,7 +65,7 @@ main{
     border-radius: 30px;
     position: relative;
     z-index: -1;
-    
+
     /* box-shadow: 0 0 50px #ccc; */
 }
 
@@ -109,7 +112,8 @@ main{
     font-size: 8px;
     font-weight: 400;
 }
-.space-end{
+
+.space-end {
     width: 110px;
 }
 
@@ -122,6 +126,7 @@ main{
     border-radius: 12px;
     margin: 0px 10px 10px;
     box-shadow: 2px 2px hsla(276, 55%, 52%, 0.1);
+
 }
 
 .chat.right {
@@ -135,10 +140,14 @@ main{
     box-shadow: 5px 5px 5px hsla(276, 55%, 52%, 0.1);
 }
 
+
 .chatbox {
     display: flex;
     flex-direction: column;
     margin-top: 12px;
+    /* overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
 }
 
 .dog-img {
@@ -153,7 +162,13 @@ main{
     width: 45px;
     height: 45px;
     border-radius: 10px;
+}
 
+.dog:hover {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) scale(1.4, 1.4);
+    -webkit-transition-delay: .15s;
+    transition-delay: .15s
 }
 
 .form {
@@ -233,9 +248,10 @@ input[type="text" i] {
 }
 
 /* booking */
-.booking{
+.booking {
     width: 51%;
 }
+
 .head-text {
     font-size: 41px;
     color: hsl(271, 36%, 24%);
@@ -249,83 +265,91 @@ input[type="text" i] {
     color: hsl(270, 7%, 64%);
     font-weight: 400;
     text-align: left;
-    padding:0px 30px;
+    padding: 0px 30px;
     line-height: 30px;
 }
+
 /* mobile view */
- @media screen and (max-width: 480px) {
-    body{
+@media screen and (max-width: 480px) {
+    body {
         width: 375px;
     }
-    main{
-    position: relative;
-    padding: 0px;
-    padding-top: 20px;
-    flex-direction: column;
 
-}
-.hide{
-    display: none;
-}
-.flex {
-    display: flex;
-}
+    main {
+        position: relative;
+        padding: 0px;
+        padding-top: 20px;
+        flex-direction: column;
 
-.center {
-    align-self: center;
-}
-.box{
-    width: 49%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    border-radius: 50px;
-}
-.violet{
-    background-image: linear-gradient(180deg, hsl(293, 100%, 63%)-5%,hsl(264, 100%, 61%)25%); 
-    width: 100%;
-    height: 58%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 50%;
-    border-radius: 0px 0px 250px 10px;
-}
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .center {
+        align-self: center;
+    }
+
+    .box {
+        width: 49%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        border-radius: 50px;
+    }
+
+    .violet {
+        background-image: linear-gradient(180deg, hsl(293, 100%, 63%)-5%, hsl(264, 100%, 61%)25%);
+        width: 100%;
+        height: 58%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 50%;
+        border-radius: 0px 0px 250px 10px;
+    }
 
 
-.app {
-    background-color: hsl(270, 20%, 96%);
-    border-radius: 25px;
-}
+    .app {
+        background-color: hsl(270, 20%, 96%);
+        border-radius: 25px;
+    }
 
-.mobile-chat {
-    margin: 50px;
-    width: unset;
- } 
- .chat{
-    font-size: 9px;
- }
-/* booking */
-.booking{
-    margin: -10px 0px 50px;
-    width: unset;
-}
-.head-text {
-    text-align: center;
-}
+    .mobile-chat {
+        margin: 50px;
+        width: unset;
+    }
 
-.para {
-    text-align: center;
+    .chat {
+        font-size: 9px;
+    }
+
+    /* booking */
+    .booking {
+        margin: -10px 0px 50px;
+        width: unset;
+    }
+
+    .head-text {
+        text-align: center;
+    }
+
+    .para {
+        text-align: center;
+    }
 }
-}  
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+    font-size: 11px;
+    text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+    color: hsl(228, 45%, 44%);
 }
-
