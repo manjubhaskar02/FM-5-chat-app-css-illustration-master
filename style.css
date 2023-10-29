@@ -64,7 +64,7 @@ main {
     box-shadow: 0 4px 30px rgb(0 0 0 / 0.2);
     border-radius: 30px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 
     /* box-shadow: 0 0 50px #ccc; */
 }
@@ -84,6 +84,10 @@ main {
     height: 25px;
     background-color: white;
     padding: 1px;
+}
+
+.avatar:hover {
+    background-color: black;
 }
 
 .name {
@@ -145,9 +149,14 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 12px;
-    /* overflow-x: hidden;
+    aspect-ratio: 1;
+    height: 350px;
+
+    width: 222px;
+    overflow-x: hidden;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
+
 }
 
 .dog-img {
@@ -166,7 +175,7 @@ main {
 
 .dog:hover {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0) scale(1.4, 1.4);
+    transform: translate3d(0, 0, 0) scale(1.2, 1.2);
     -webkit-transition-delay: .15s;
     transition-delay: .15s
 }
@@ -225,6 +234,40 @@ input[type="text" i] {
     padding: 10px;
     width: 85%;
 }
+
+input[type="text" i]:focus-within {
+    color: hsl(271, 15%, 43%);
+}
+
+
+input:focus {
+    border: 3px solid #ccc;
+    outline: none;
+}
+
+input:focus-visible {
+    border: 3px solid #ccc;
+    outline: none;
+
+}
+
+
+input[type="text" i]:active {
+    background-color: white;
+    /* border: none; */
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    width: 85%;
+    border: 3px solid #ccc;
+    /* -webkit-transition: 0.5s;
+    transition: 0.5s; */
+
+}
+
+
+
+
 
 ::placeholder {
     font-size: 10px;
